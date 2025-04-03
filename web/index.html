@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FiveM Electron Launcher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="left-slot" class="image-slot"></div>
+    <div id="right-slot" class="image-slot"></div>
+
+    <div class="header-bar">
+      <span class="header-btn" onclick="minimize()">_</span>
+      <span class="header-btn" onclick="closeApp()">X</span>
+    </div>
+
+    <div id="bottom-container">
+      <div id="center-logo">
+        <img id="center-image" src="" alt="Logo">
+      </div>
+      <div id="title"></div>
+      <div id="server-stats">
+        <div class="stat-item">
+          <span class="stat-label">Players:</span>
+          <span id="player-count" class="stat-value">0/0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Status:</span>
+          <span id="server-status" class="stat-value">Checking...</span>
+        </div>
+      </div>
+      <div id="button-group">
+        <button id="join-city" class="btn"></button>
+        <button id="join-discord" class="btn"></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

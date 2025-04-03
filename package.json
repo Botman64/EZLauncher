@@ -1,0 +1,42 @@
+{
+  "name": "fivem-electron-app",
+  "version": "1.0.0",
+  "description": "An Electron launcher for FiveM servers",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "node set-product-name.js && electron-builder --win"
+  },
+  "dependencies": {
+    "fivem-server-api": "^1.0.1"
+  },
+  "devDependencies": {
+    "electron": "^20.0.0",
+    "electron-builder": "^24.6.4"
+  },
+  "build": {
+    "appId": "com.fivem.${name}",
+    "productName": "Testing",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!dist/**/*",
+      "!build/**/*"
+    ],
+    "extraResources": [
+      "assets/**"
+    ],
+    "extraMetadata": {
+      "main": "main.js"
+    },
+    "asar": true,
+    "win": {
+      "target": "portable",
+      "icon": "assets/icon.ico",
+      "artifactName": "Testing.exe"
+    }
+  },
+  "author": "Botman64"
+}

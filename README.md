@@ -2,7 +2,7 @@
 
 A customizable electron-based launcher for FiveM servers. This launcher provides server owners with an easy way to distribute a branded launcher application to their players.
 
-![Launcher Preview](docs\peview.png)
+![Launcher Preview](https://raw.githubusercontent.com/Botman64/EZLauncher/refs/heads/main/docs/peview.png)
 <br>*EZLauncher Preview Image*
 
 ## Features
